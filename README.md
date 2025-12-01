@@ -1,18 +1,64 @@
-# React + Vite
+Project Overview -
+TaskFlow is a task management application built using React 19.
+Users can create, update, delete and search tasks with category-wise filtering.
+The app also includes native Drag & Drop, persistent storage using LocalStorage, and a clean responsive UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features -
+Add new tasks
+Edit existing tasks
+Delete tasks with confirmation
+Search tasks
+Filter by priority & tags
+Task columns: Todo, In-Progress, Completed
+Native Drag & Drop support
+Fully responsive UI
+LocalStorage persistence
 
-Currently, two official plugins are available:
+Folder Structure -
+src/
+│── components/
+│     ├── AddTaskButton.jsx
+|     ├── ColumnTask.jsx
+│     ├── Header.jsx
+│     ├── Modal.jsx
+│     ├── PriorityFilter.jsx
+│     ├── SearchBar.jsx
+│     ├── ShowAllColumn.jsx
+|     ├── TagFilter.jsx
+|     ├── TaskDetails.jsx
+|     ├── TaskForm.jsx
+│── pages/
+│     ├── TaskFlow.jsx
+│── utils/
+│── App.jsx
+│── main.jsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Libraries Used -
+Library -	Purpose
+React 19 -	UI + State management
+Tailwind CSS -	Styling
+LocalStorage API -	Data persistence
+Native Drag & Drop API -	Moving tasks between columns
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+How to Run -
+Clone repo:
+git clone https://github.com/yourusername/taskflow-app.git
 
-Note: This will impact Vite dev & build performances.
 
-## Expanding the ESLint configuration
+Install dependencies:
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Run project:
+npm run dev
+
+Open in browser:
+http://localhost:5173/
+
+Future Improvements-
+Add DnD Kit or React Beautiful DnD (if React 19 support is added)
+Dark mode UI
+User authentication (Admin, User roles)
+Cloud database instead of LocalStorage
+Animations for drag & drop
+Task analytics dashboard
